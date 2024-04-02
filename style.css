@@ -1,0 +1,664 @@
+body {
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: CabinetGrotesk;
+    src: url(CabinetGrotesk-Bold.otf);
+}
+
+@font-face {
+    font-family: CabinetGrotesk2;
+    src: url(CabinetGrotesk-Regular.otf);
+}
+
+@font-face {
+    font-family: CabinetGrotesk3;
+    src: url(CabinetGrotesk-Medium.otf);
+}
+
+@font-face {
+    font-family: CabinetGrotesk4;
+    src: url(CabinetGrotesk-Extralight.otf);
+}
+
+#container {
+    height: max-content;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("cover.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    width: 90%;
+    margin-left: 50px;
+    align-items: center;
+}
+
+nav a {
+    font-family: CabinetGrotesk;
+    margin: 25px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.84px;
+    letter-spacing: -1%;
+}
+
+nav img {
+    left: 80px;
+    height: 40px;
+    width: 110px;
+}
+
+.container2 {
+    display: flex;
+    width: 1100px;
+    justify-content: flex-end;
+}
+
+.menubar {
+    display: inline-block;
+    cursor: pointer;
+    margin: 25px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20.86px;
+    height: 2.43px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.container3 {
+    display: flex;
+    width: 900px;
+    justify-content: flex-end;
+    margin-left: 150px;
+    column-gap: 110px;
+}
+
+@keyframes slideInRight {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(17, 17, 17, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+    animation: slideInRight 1s ease-in-out 0s 1 normal none;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: CabinetGrotesk;
+}
+
+.overlay a {
+    transition: o.5s;
+}
+
+.overlay .closebtn {
+    font-size: 30px;
+}  
+
+
+.advanced {
+    display: grid;
+    margin-top: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    height: 400px;
+    width: 90%;
+    margin-left: 50px;
+}
+
+.advanced a {
+    margin-left: 90px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-family: CabinetGrotesk;
+    font-size: 66px;
+    font-weight: 800;
+    line-height: 119.04px;
+    width: max-content;
+    transition: 0.3s;
+}
+
+.btn {
+    width: 190px;
+    margin-top: 23px;
+    margin-left: 860px;
+}
+
+.advanced button {
+    width: 150px;
+    height: 40px;
+    background-color: rgba(252, 204, 83, 1);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.footer a {
+    text-decoration: none;
+    font-family: CabinetGrotesk2;
+    margin: 40px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+}
+
+h1 {
+    color: rgba(255, 255, 255, 1);
+    font-family: CabinetGrotesk;
+    font-weight: 700;
+    font-size: 56px;
+    width: 500px;
+    line-height: 64.28px;
+    margin-top: 329px;
+    margin-left: 150px;
+    position: relative;
+}
+
+.img2 {
+    margin-left: 890px;
+    height: 105px;
+}
+
+.img2 img {
+    height: 72px;
+    width: 300px;
+}
+
+#container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+}
+.box1 {
+    color: rgba(255, 255, 255, 1);
+    font-family: CabinetGrotesk2;
+    background-color: rgba(67, 145, 130, 1);
+    font-size: 20px;
+}
+
+.box1 p {
+    width:300px;
+}
+
+.box1 a {
+    color: rgba(255, 255, 255, 1);
+    font-family: CabinetGrotesk;
+}
+
+.box2 {
+    color: rgba(54, 54, 54, 1);
+    font-family: CabinetGrotesk2;
+    background-color: rgba(252, 204, 83, 1);
+    font-size: 20px;
+}
+
+.box2 p {
+    width:300px;
+}
+
+.box2 a {
+    color: rgba(54, 54, 54, 1);
+    font-family: CabinetGrotesk;
+}
+
+.box4 {
+    margin: 60px;
+}
+
+.box3 {
+    color: rgba(255, 255, 255, 1);
+    font-family: CabinetGrotesk2;
+    background-color: rgba(67, 145, 130, 1);
+    font-size: 20px;
+}
+
+.box3 p {
+    width:300px;
+}
+
+.box3 a {
+    color: rgba(255, 255, 255, 1);
+    font-family: CabinetGrotesk;
+}
+
+.support {
+    margin: 50px;
+    font-family: CabinetGrotesk;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: CabinetGrotesk3;
+    width: 550px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-left: 360px;
+}
+
+w {
+    margin-left: 100px;
+}
+
+.support p {
+    font-size: 14px;
+    font-family: CabinetGrotesk4;
+    margin-left: 410px;
+    width: 400px;
+    color: rgba(134, 134, 134, 1);
+}
+
+.container5 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+}
+
+.container5 img {
+    height: 520px;
+    width: 600px;
+}
+.box5 {
+    margin: 15px 0px 0px 120px;
+    width: 325px;
+}
+
+h3 {
+    color: rgba(54, 54, 54, 1);
+    font-family: CabinetGrotesk2;
+    font-size: 40px;
+    line-height: 49.52px;
+    height: 150px;
+    margin-bottom: 0px;
+}
+
+.container5 p {
+    margin-top: 15px;
+    font-size: 13px;
+    font-family: CabinetGrotesk4;
+    color: rgba(134, 134, 134, 1);
+}
+
+.container5 button {
+    border: 1px solid rgba(17, 17, 17, 1);
+    background-color: white;
+    width: 170px;
+    height: 38px;
+    font-size: 12px;
+    font-family: CabinetGrotesk4;
+    margin-top: 5px;
+}
+
+.container6 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.container6 img {
+    height: 520px;
+    width: 608px;
+}
+.box6 {
+    margin: 20px 100px 0px 100px;
+    width: 460px;
+}
+
+h4 {
+    color: rgba(54, 54, 54, 1);
+    font-family: CabinetGrotesk2;
+    font-size: 40px;
+    line-height: 49.52px;
+    height: max-content;
+    margin-bottom: 0px;
+}
+
+.container6 p {
+    font-size: 13px;
+    font-family: CabinetGrotesk4;
+    color: rgba(134, 134, 134, 1);
+    width: 325px;
+    margin-top: 15px;
+    line-height: 20px;
+}
+
+.container6 button {
+    border: 1px solid rgba(17, 17, 17, 1);
+    background-color: white;
+    width: 170px;
+    height: 38px;
+    font-size: 12px;
+    font-family: CabinetGrotesk4;
+    margin-top: 5px;
+}
+
+ul {
+    margin-top: 30px;
+}
+
+li {
+    list-style-image: url("check.png");
+    font-family: CabinetGrotesk4;
+    font-size: 12px;
+    color: rgba(134, 134, 134, 1);
+    padding-bottom: 20px;
+}
+
+.charity {
+    margin-top: 80px;
+}
+
+h5 {
+    font-size: 36px;
+    font-family: CabinetGrotesk3;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    height: max-content;
+}
+
+.charity p {
+    font-size: 14px;
+    font-family: CabinetGrotesk4;
+    color: rgba(134, 134, 134, 1);
+    text-align: center;
+    margin-top: -40px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 35px 150px;
+}
+
+.logos img {
+    padding-right: 60px;
+}
+
+.logo1 img {
+    width: 140px;
+    height: 90px;
+}
+
+.logo2 img {
+    width: 100px;
+    height: 90px;
+}
+.logo4 img {
+    height: 60px;
+    width: 120px;
+
+}
+
+.logo5 img {
+    width: 160px;
+    height: 90px;
+}
+
+.accr {
+    height: 35px;
+    width: 120px;
+    background-color: rgba(252, 204, 83, 1);
+    color: rgba(0, 0, 0, 0.87);
+    font-family: CabinetGrotesk3;
+    border: 1px none;
+    margin-left: 45%;
+}
+
+.container7 {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: CabinetGrotesk2;
+}
+
+.box7 {
+    height: 500px;
+    width: 50%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("Rectangle\ 11.png");
+    background-size: cover;
+}
+
+.box7 p, .box8 p {
+    width: 240px;
+    margin-left: 80px;
+    font-family: CabinetGrotesk3;
+    line-height: 18px;
+}
+
+.box8 {
+    height: 500px;
+    width: 50%;
+    background-image: url(Rectangle\ 12.png);
+    background-size: cover;
+}
+
+.container7 a{
+    color: rgba(255, 255, 255, 0.87);
+    margin-left: 80px;
+}
+
+.linkk {
+    margin-top: 40px;
+}
+
+.dollar {
+    font-size: 18px;
+}
+
+.nambia, .news {
+    font-size: 13px;
+}
+
+.cover2 {
+    margin-top: 270px;
+}
+
+.track {
+    font-size: 14px;
+    font-family: CabinetGrotesk4;
+    color: rgba(134, 134, 134, 1);
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+
+.email {
+    height: 25px;
+    font-size: 12px;
+    width: 300px;
+    margin-left: 35%;
+}
+
+.subscribe {
+    height: 32px;
+    width: 85px;
+    font-size: 12px;
+    background-color: rgba(252, 204, 83, 1);
+    border: none;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 80px;
+}
+
+
+footer {
+    width: 100%;
+    background-color: rgba(33, 33, 33, 1);
+    height: 500px;
+    font-family: CabinetGrotesk4;
+}
+
+footer img {
+    width: 95px;
+    height: 45px;
+}
+
+.finalcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box9 {
+    margin: 80px 0 0 50px;
+}
+
+.box10 {
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    display: flex;
+    margin-top: 35px;
+}
+
+.tremendous {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    width: 200px;
+}
+
+
+.box10 img {
+    width: 20px;
+    height: 20px;
+    padding-right: 8px;
+}
+
+
+.box11 {
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    display: flex;
+    margin-top: 25px;
+}
+
+.box11 img {
+    width: 18px;
+    height: 18px;
+    padding-right: 8px;
+}
+
+.box12 {
+    display: flex;
+    flex-direction: column;
+}
+
+.bold {
+    color: rgba(255, 255, 255, 0.87);
+    font-family: CabinetGrotesk;
+    font-size: 13px;
+}
+
+.box12 a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    padding-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .container {
+        position: absolute;
+    }
+
+    h1 {
+        margin-left: 20px;
+        margin-top: 100px;
+        font-size: 20px;
+        width: 180px;
+        line-height: 29.68px;
+        font-weight: 700;
+    }
+
+    nav img {
+        width: 52px;
+        height: 21px;
+    }
+
+    nav a {
+        display: none;
+        margin: 0px;
+    }
+
+    .overlay .closebtn {
+        display: block;
+    }
+
+    nav {
+        margin-left: 20px;
+        align-self: center;
+    }
+
+    .menubar {
+        margin: 0;
+    }
+
+    .bar1,
+.bar2,
+.bar3 {
+    width: 12.86px;
+    height: 1.7px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 3px 0;
+    }
+
+    .img2 {
+        margin-left: 70px;
+        height: 70px;
+    }
+
+    .img2 img {
+        width: 200px;
+        height: 40px;
+    }
+}

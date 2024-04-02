@@ -1,0 +1,248 @@
+body {
+    list-style: none;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+@font-face {
+    font-family: CabinetGrotesk;
+    src: url(CabinetGrotesk-Bold.otf);
+}
+
+@font-face {
+    font-family: CabinetGrotesk2;
+    src: url(CabinetGrotesk-Regular.otf);
+}
+
+@font-face {
+    font-family: CabinetGrotesk3;
+    src: url(CabinetGrotesk-Medium.otf);
+}
+
+@font-face {
+    font-family: CabinetGrotesk4;
+    src: url(CabinetGrotesk-Extralight.otf);
+}
+
+#container {
+    height: max-content;
+    position: relative;
+    background-color: rgba(67, 145, 130, 1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    width: 90%;
+    margin-left: 3.125rem;
+    align-items: center;
+}
+
+nav a {
+    font-family: CabinetGrotesk;
+    margin: 1.5625rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.24rem;
+    letter-spacing: -1%;
+}
+
+nav img {
+    left: 5rem;
+    height: 2.5rem;
+    width: 6.875rem;
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.menubar {
+    display: inline-block;
+    cursor: pointer;
+    margin: 1.5625rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20.86px;
+    height: 2.43px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.container3 {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 150px;
+    column-gap: 110px;
+}
+
+@keyframes slideInRight {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(17, 17, 17, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+    animation: slideInRight 1s ease-in-out 0s 1 normal none;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: CabinetGrotesk;
+}
+
+.overlay a {
+    transition: o.5s;
+}
+
+.overlay .closebtn {
+    font-size: 30px;
+}  
+
+
+.advanced {
+    display: grid;
+    margin-top: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    height: 400px;
+    width: 90%;
+    margin-left: 50px;
+}
+
+.advanced a {
+    margin-left: 90px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-family: CabinetGrotesk;
+    font-size: 66px;
+    font-weight: 800;
+    line-height: 119.04px;
+    width: max-content;
+    transition: 0.3s;
+}
+
+.btn {
+    width: 190px;
+    margin-top: 23px;
+    margin-left: 860px;
+}
+
+.advanced button {
+    width: 150px;
+    height: 40px;
+    background-color: rgba(252, 204, 83, 1);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.footer a {
+    text-decoration: none;
+    font-family: CabinetGrotesk2;
+    margin: 40px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+}
+
+h1 {
+    color: rgba(255, 255, 255, 1);
+    font-family: CabinetGrotesk;
+    font-weight: 700;
+    font-size: 2.875rem;
+    width: 37.5rem;
+    line-height: 3.2675rem;
+    margin-top: 5.625rem;
+    margin-left: 5.625rem;
+    position: relative;
+}
+
+.moving {
+    font-family: CabinetGrotesk4;
+    font-size: 12px;
+    width: 325px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    margin-left: 63%;
+    line-height: 19px;
+} 
+
+.container4 {
+    width: 100%;
+}
+
+.container4 img {
+    width: 100%;
+    height: 450px;
+}
+
+.container5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 90px;
+}
+
+.box1 {
+    margin-right: 20%;
+}
+
+h2 {
+    color: rgba(54, 54, 54, 1);
+    font-family: CabinetGrotesk;
+    width: 400px;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.non-profit {
+    font-family: CabinetGrotesk;
+    color: rgba(54, 54, 54, 1);
+    font-size: 14px;
+    width: 425px;
+}
+
+.box2 p  {
+    color: rgba(134, 134, 134, 1);
+    width: 380px;
+    font-size: 13px;
+}
+
+
+
+@media (max-width: 600px) {
+    .eng {
+        display: none;
+    }
+}
