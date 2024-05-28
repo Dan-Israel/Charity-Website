@@ -29,6 +29,9 @@ body {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("cover.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 nav {
@@ -36,25 +39,25 @@ nav {
     flex-direction: row;
     border-bottom: 1px solid rgba(255, 255, 255, 1);
     width: 90%;
-    margin-left: 50px;
+    margin-left: 3.125rem;
     align-items: center;
 }
 
 nav a {
     font-family: CabinetGrotesk;
-    margin: 25px;
+    margin: 1.5625rem;
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19.84px;
+    font-size: 1rem;
+    line-height: 1.24rem;
     letter-spacing: -1%;
 }
 
 nav img {
-    left: 80px;
-    height: 40px;
-    width: 110px;
+    left: 5rem;
+    height: 2.5rem;
+    width: 6.875rem;
 }
 
 .container2 {
@@ -66,7 +69,7 @@ nav img {
 .menubar {
     display: inline-block;
     cursor: pointer;
-    margin: 25px;
+    margin: 1.5625rem;
 }
 
 .bar1,
